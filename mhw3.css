@@ -1,0 +1,1263 @@
+body {
+    margin: 0;
+
+  }
+  #navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 78px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+  }
+  
+  .social {
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .flex-item {
+    position: relative;
+    padding-left: 10px;
+  }
+  
+  .flex-tik img {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    left: 40%;
+  }
+  
+  .logo {
+    position: relative;
+    left: 0.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 2%;
+    cursor: pointer;
+  }
+  
+  .menu-icon {
+    margin-right: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+  }
+  .close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .close-icon img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center; /* Allinea il testo al centro */
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 6vh;
+    background-color:gold;
+}
+
+.menu-link {
+  font-weight: bold; /* Grassetto */
+  text-decoration: none; /* Rimuove la sottolineatura */
+  color: black; /* Cambia il colore del testo se necessario */
+}
+
+
+
+.social-icons {
+    position: absolute; /* Posiziona le icone social in modo assoluto */
+    top: 5%; /* Distanza dal top */
+    left: 5%; /* Distanza dal left */
+    display: flex;
+    align-items: center;
+}
+
+
+.ab {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2vh;
+  margin-top: 2%;
+}
+
+#album-view {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#album-view .album {
+  margin: 3px;
+  border: 1px solid black;
+  padding: 2px;
+  max-width: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+#album-view img {
+  max-width: 100%;
+}
+
+
+
+
+.log{
+
+  position: absolute; /* Posiziona le icone social in modo assoluto */
+  top: 2%; /* Distanza dal top */
+   /* Distanza dal left */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+
+
+.menu.active {
+    display: flex;
+}
+
+.close-icon {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    cursor: pointer;
+}
+
+.close-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+
+  
+
+header {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 752px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#myVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1; /* Sposta il video dietro gli altri elementi */
+}
+
+.video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.testoimg {
+  color: white;
+  z-index: 2; /* Assicura che le scritte siano sopra il video */
+  text-align: center;
+  line-height: 1; /* Modifica per una maggiore spaziatura */
+  font-size: 3.5vh;
+  position: relative;
+  top: -30%;
+  letter-spacing: 0.5;
+  font-family: 'Poppins', sans-serif;
+}
+
+.testoimg h2 {
+  font-size: 7vh;
+  position: relative;
+   top:-15% ;
+}
+
+.botton {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 25px;
+  width: 17vh;
+  height: 8vh;
+  top:-35%; /* Modifica la distanza dal testo */
+  z-index: 2; /* Assicura che il bottone sia sopra il video */
+}
+
+.botton a {
+  color: black;
+  margin: auto; /* Centra il testo verticalmente */
+  font-size: 2.5vh;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  font-weight: bold; /* Modifica font-style a font-weight */
+}
+
+
+
+
+.frasi{
+width: 100%;
+height: 400px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color:white;
+font-family: 'Poppins', sans-serif;
+}
+
+
+.sinistra {
+display: flex;
+flex-direction: column;
+  color:black;
+position: relative; 
+text-align: start;
+line-height: 0.50;
+font-size: 27px;
+margin-top: 4%;
+left: 10%;
+
+}
+
+
+
+.destra{
+display: flex;
+flex-direction: column;
+  right: 210px;
+color:black;
+font-family: 'Poppins', sans-serif;
+position: relative;
+font-size: 21px;
+line-height: 1;
+margin-top: -5%;
+
+}
+
+
+
+mark {
+  background-color: black;
+  color: white;
+}
+
+
+.impressioni{
+width: 100%;
+height: 400px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: #fff172;
+font-family: 'Poppins', sans-serif;
+}
+
+.miliardo{
+display: flex;
+flex-direction: column;
+
+position: relative;
+left: 10%;
+align-items: center;
+font-size: 4vh;
+
+
+}
+
+.miliardo h1{
+  position: relative;
+  left: 45%;
+  font-size: 7vh;
+  align-items: center;
+}
+
+
+.miliardo h2{
+position: relative;
+left: 45%;
+align-items: center;
+margin-top: -17%;
+font-size: 2vh;
+}
+
+
+.milioni{
+ display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 6%;
+ align-items: center;
+}
+
+.milioni h1{
+  font-size: 7vh;
+  right: 35%;;
+  position: relative;
+  align-items: center;
+  margin-top: 16%;
+  font-style: bold;
+}
+
+.milioni h2{
+position: relative;
+right:  30%;
+align-items: center;
+margin-top: -18%;
+font-size: 2vh;
+}
+
+
+.anni{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  right: 6%;
+ align-items: center;
+}
+
+.anni h1{
+
+  font-size: 7vh;
+  position: relative;
+  right:  70%;
+  align-items: center;
+  margin-top: 23%;
+}
+
+.anni h2{
+
+  position: relative;
+  right: 80%;
+  align-items: center;
+  margin-top: -18%;
+  font-size: 2vh;
+
+}
+
+
+
+
+.leg{
+
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  height: 600px;
+  width: 100%; 
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.segue{
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+margin-top: -3%;
+font-family: 'Poppins', sans-serif;
+font-size: 3.5vh;
+}
+
+.soc{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.is img {
+  width: 50px;
+  height: 50px;
+}
+
+
+
+
+.marchi{
+
+  background-color:black;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+
+
+.clienti {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  top: 10%;
+  font-size: 3vh;
+
+}
+
+
+.container-marchi{
+
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+
+.ims img{
+
+  max-width: 100%;
+  width: 180px ;
+  height: auto;
+  
+}
+
+#back,#next {
+  display: flex;
+  position: absolute;
+  color:#00000090;
+  background-color: #ffffff92;
+  border-radius: 60%;
+  z-index: 1;
+  }
+
+
+  #back {
+    margin-left: +3%;
+    left: 0;
+    margin-top: 17%;
+   
+  }
+  
+  #next {
+    margin-right: +3%;
+    right: 0; 
+    margin-top: 17%;
+  }
+
+ 
+  
+  #back :hover, #next :hover {
+    color:#000000;
+    transition: 0.8s ease;
+    }
+
+
+.indicator-flex {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin-top: -50px;
+  margin-bottom: 25px;
+}
+
+
+.indicator-flex {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin-top: 80px;
+  margin-bottom: 25px;
+}
+.indicator {
+  width: 10px; /* Riduciamo leggermente la larghezza per farli sembrare più pallini */
+  height: 10px; /* Impostiamo l'altezza uguale alla larghezza per ottenere un cerchio */
+  background-color: white;
+  border-radius: 50%; /* Impostiamo il raggio del bordo al 50% per ottenere un cerchio */
+  margin: 0px 5px;
+}
+
+.indicator:hover{
+  background-color: rgb(92, 92, 92);
+  
+}
+
+
+
+
+
+.letter{
+
+  background-color: #fff172;
+  height: 270px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iscriviti{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  margin-top: -10%;
+  left: 25%;
+  font-size: 2.7vh;
+  font-weight: bold;
+
+}
+
+
+.mail-b{
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+.bottone{
+
+  background-color:black;
+display: flex;
+border-radius: 25px;
+position: relative;
+left:20%;
+width: 190px;
+height: 50px;
+
+}
+.bottone a{
+  color: white;
+  position: relative;
+  left: 10%;
+  margin-top: 7%;
+  font-size: 2.5vh;
+  font-family:'Poppins', sans-serif;
+  text-decoration: none;
+  font-style: bold;
+  }
+
+
+.email{
+  position: relative;
+  margin-top: -1%;
+  right: 10%;
+  padding: 5px;
+  font-size: 1.5vh;
+  width: 100%;
+  background-color:white ;
+
+}
+
+
+.email input {
+  border: none; 
+}
+
+
+.Privacy{
+  display: flex;
+  align-items: center;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  margin-top: 8%;
+  right: 30%;
+  font-size: 1vh;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  width: 100%;
+  height: 350px;
+  margin-top: -0.5%;
+  bottom: 0;
+
+}
+
+.logof{
+
+  display: flex;
+  position: relative;
+  margin-top: 2%;
+  left: 11%;
+
+}
+
+.logof img{
+    width: 80px;
+    height: 80px;
+}
+
+.f_txt0{
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+
+.f_txt1{
+  display: flex;
+  flex-direction: column;
+  margin-top: 8%;
+  font-family:'Poppins', sans-serif;
+  font-size: 1.8vh;
+  font-weight: lighter;
+  line-height: 2.5;
+  letter-spacing: 1.06px;
+  position: relative;
+  right: 63%;
+
+}
+.f_txt1 h1{
+  font-size: 2vh;
+  position: relative;
+  margin-top: -2%;
+}
+
+
+.f_txt2{
+  font-family:'Poppins', sans-serif;
+  font-size: 1vh;
+  font-weight: lighter;
+  line-height: 1.2;
+  letter-spacing: 1.06px;
+  position: relative;
+  right: 50%;
+  margin-top: -10%;
+ 
+}
+
+.f_txt2 a {
+  font-size: 2vh;
+  font-family:'Poppins', sans-serif;
+  color: black;
+}
+
+.f_txt2 h2{
+
+  position: relative;
+  margin-top: 21%;
+  font-size: 2.2vh;
+}
+
+.f_txt3{
+
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  right: 35%;
+  margin-top: -25%;
+  font-size: 1.1vh;
+  font-family:'Poppins', sans-serif;
+}
+
+.f_txt3 a{
+  display: flex;
+  font-family:'Poppins', sans-serif;
+  color: black;
+  font-size: 1.9vh;
+}
+
+
+
+@media only screen and (max-width: 991px) {
+
+  #navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 68px;
+    width: 100%; /* Impostiamo la larghezza desiderata */
+    position: fixed; /* Rende la navbar fissa */
+    top: 0; /* La posiziona in cima alla pagina */
+    left: 0; /* La posiziona all'estrema sinistra */
+    z-index: 1000; /* Assicura che la navbar sia sopra gli altri contenuti */
+    /* Aggiungi altri stili desiderati */
+    background-color: white;
+}
+  
+ 
+  .social{
+    display: none;
+ }
+
+
+
+.logo {
+  position: relative;
+  display: flex;
+    align-items: center;
+   position: relative;
+   left: 22%;
+  }
+  .logo img{
+    height: 58px;
+    width: 58px;
+  }
+
+.menu-icon{
+  padding: 0%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  right: 12%;
+}
+
+.menu-icon img{
+  height: 20px;
+  width: 20px;
+}
+
+header{
+  z-index: -1;
+  width: 100%;
+  height: 950px ;
+  background-color: black;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#myVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 950px;
+  z-index: -1; /* Sposta il video dietro gli altri elementi */
+}
+
+.video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.testoimg{
+  margin-top: -10%;
+  color: white;
+  z-index:1;
+  text-align: center;
+  line-height: 1;
+  font-size: 2vh;
+  letter-spacing: 1px;
+  font-family:'Poppins', sans-serif;
+}
+
+.testoimg h2{
+ position: relative;
+ margin-top: 1%;
+ font-size: 3.7vh;
+ 
+}
+.botton{
+ background-color: white;
+display: flex;
+border-radius: 25px;
+width: 120px;
+height: 40px;
+}
+
+.botton a{
+color: black;
+position: relative;
+left: 2%;
+margin-top: 5%;
+font-size: 1.5vh;
+font-family:'Poppins', sans-serif;
+text-decoration: none;
+font-style: bold;
+
+}
+
+
+  .frasi{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  
+
+  }
+ 
+ 
+  .destra{
+  font-size: 2vh;
+ position: relative;
+ margin-top: 20%;
+ left:1%;
+
+ 
+}
+.sinistra{
+  font-size: 1.5vh;
+  position: relative;
+  line-height: 1;
+  margin-top: 30%;
+  left: 1%;
+}
+
+
+
+.impressioni{
+  width: 100%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff172;
+  font-family: 'Poppins', sans-serif;
+  }
+  
+  
+  .miliardo h1{
+    position: relative;
+    left: -15%;
+    font-size: 5vh;
+    align-items: center;
+
+  }
+  
+  
+  .miliardo h2{
+  position: relative;
+  left: -5%;
+  align-items: center;
+  margin-top: -17%;
+  font-size: 1.5vh;
+  }
+  
+  
+  
+  
+  .milioni h1{
+    font-size: 5vh;
+    right: 8%;;
+    position: relative;
+    align-items: center;
+    margin-top: 16%;
+    font-style: bold;
+  }
+  
+  .milioni h2{
+  position: relative;
+  right:  -1%;
+  align-items: center;
+  margin-top: -18%;
+  font-size: 1.5vh;
+  }
+  
+  
+  .anni h1{
+  
+    font-size: 5vh;
+    position: relative;
+    left:  23%;
+    align-items: center;
+    margin-top: 10%;
+  }
+  
+  .anni h2{
+  
+    position: relative;
+    left: 20%;
+    align-items: center;
+    margin-top: -18%;
+    font-size: 1.5vh;
+  
+  }
+  
+  
+.leg{
+
+  background-color: white;
+  display: flex;
+  height: 800px;
+  padding-top: 10px;
+  width: 100%; 
+  align-items: center;
+  
+}
+
+.segue{
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+margin-top: -25%;
+left: 25%;
+font-family: 'Poppins', sans-serif;
+font-size: 2.3vh;
+}
+
+.yt{
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+margin-top: 10%;
+left:-10%
+
+}
+
+
+.yt img {
+  width: 40px;
+  height: 40px;
+}
+
+
+
+.insta{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 10%;
+  left:-7.5%;
+}
+
+.insta img{
+  width: 40px;
+  height: 40px;
+}
+
+.tiktok{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 10%;
+  left: -5%;
+}
+
+.tiktok img{
+  width: 27.33px;
+  height: 32px;
+
+}
+
+
+
+
+.marchi{
+
+  background-color:black;
+  height: 230px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+
+
+.clienti {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  margin-top: -5%;
+  font-size: 1.7vh;
+
+}
+
+
+.conteiner-marchi{
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.universal img{
+
+  width: 153.600px;
+  height: 93.388px;
+  
+}
+
+
+.sony img{
+  width: 153.600px;
+  height: 93.388px;
+
+}
+
+.warne{
+  display: none;
+
+}
+
+.netflix{
+
+  display:none;
+
+}
+
+
+.letter{
+
+  background-color: #fff172;
+  height: 350px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5%;
+}
+
+.iscriviti{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6vh;
+  position: relative;
+  left: -2%;
+  font-weight: bold;
+
+}
+
+
+.mail-b{
+
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content:center;
+
+}
+.bottone{
+ background-color:black;
+display: flex;
+position: relative;
+margin-top: 5%;
+left: -3%;
+border-radius: 25px;
+width: 387.35px;
+height: 48px;
+
+}
+.bottone a{
+  color: white;
+  position: relative;
+  left: 35%;
+  margin-top: 1.5%;
+  font-size: 2.5vh;
+  font-family:'Poppins', sans-serif;
+  text-decoration: none;
+  font-style: bold;
+  }
+
+
+.email{
+  position: relative;
+  align-items: center;
+  margin-top: -1%;
+  left: -2%;
+  padding: 5px;
+  width: 387.35px;
+  height: 48px;
+  background-color:white ;
+
+}
+
+
+.email input {
+  border: none; 
+}
+
+
+
+.Privacy{
+  display: flex;
+  align-items: center;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  margin-top: 8%;
+ left: 2%;
+  font-size: 0.7vh;
+}
+
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+  background-color: white;
+  width: 100%;
+  height: 750px;
+  bottom: 0;
+
+}
+
+.logof{
+
+  display: flex;
+  position: relative;
+  margin-top: -60%;
+  left: 5%;
+
+}
+
+.logof img{
+    width: 80px;
+    height: 80px;
+}
+
+.f_txt0{
+
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column-reverse;
+
+}
+
+.f_txt1{
+  display: flex;
+  flex-direction: column;
+  margin-top: 45%;
+  font-family:'Poppins', sans-serif;
+  font-size: 1.4vh;
+  font-weight: lighter;
+  line-height: 2.5;
+  letter-spacing: 1.06px;
+  position: relative;
+  left: -10%;
+
+}
+.f_txt1 h1{
+  font-size: 1.7vh;
+  position: relative;
+  margin-top: -15%;
+  
+}
+
+
+.f_txt2{
+  font-family:'Poppins', sans-serif;
+  font-size: 0.8vh;
+  font-weight: lighter;
+  line-height: 1.2;
+  letter-spacing: 1.06px;
+  position: relative;
+  left: -10%;
+  margin-top: -30%;
+ 
+}
+
+.f_txt2 h1{
+display: flex;
+position: relative;
+margin-top: -10%;
+
+}
+.f_txt2 a {
+  font-size: 1.5vh;
+  font-family:'Poppins', sans-serif;
+  color: black;
+}
+
+.f_txt2 h2{
+
+  position: relative;
+  margin-top: 60%;
+  font-size: 1.7vh;
+}
+
+.f_txt3{
+
+  display: flex;
+  position: relative;
+  flex-direction: column;
+ left:-17%;
+  margin-top: -35%;
+  font-size: 0.8vh;
+  font-family:'Poppins', sans-serif;
+}
+
+.f_txt3 a{
+  display: flex;
+  font-family:'Poppins', sans-serif;
+  color: black;
+  font-size: 1.5vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
